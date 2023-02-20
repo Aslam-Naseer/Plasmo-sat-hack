@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(({type , text}) => {
         'X-RapidAPI-Key': 'f266f6b76dmsha6e07fbddd0e845p11c15cjsn68aefa7ed48a',
         'X-RapidAPI-Host': 'botlens-gpt-text-detection.p.rapidapi.com'
       },
-      body: '{"text":"Many people have claimed to be Satoshi Nakamoto, but none of them have been able to provide convincing evidence of their identity. Some of the most notable claimants include Australian entrepreneur Craig Wright and American computer scientist Nick Szabo. However, their claims have been met with skepticism and have failed to convince the wider community."}'
+      body: '{"text": text}'
     }; 
     
     fetch('https://botlens-gpt-text-detection.p.rapidapi.com/req_check_bot.php', options)
